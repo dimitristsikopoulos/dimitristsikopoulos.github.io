@@ -82,6 +82,7 @@ ul li :hover {
   }
   .burger {
     display: block;
+    margin-left: 1rem;
   }
   .contact {
     flex-direction: column;
@@ -193,18 +194,21 @@ ul li :hover {
 .upper-title {
   width: 90vw;
   margin: auto;
-  min-height: 15vh;
-  margin-top: 10vh;
-  display: flex;
-  justify-content: space-between;
+  min-height: 10vh;
+  margin-top: 15vh;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 .upper-title h1 {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  font-size: 3rem;
   font-family: "Montserrat", sans-serif;
 }
+
 .btn {
   padding: 1rem;
   border: none;
