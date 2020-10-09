@@ -83,7 +83,33 @@ ul li :hover {
   .burger {
     display: block;
   }
+  .contact {
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .form-right,
+  .form-left {
+    min-width: 90vw;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .form-right {
+    min-height: 50vh;
+  }
+  .form-left input {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+  }
 }
+
 .nav-active {
   transform: translateX(-100vw);
   overflow: hidden;
