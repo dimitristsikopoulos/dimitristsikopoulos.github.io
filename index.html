@@ -1,1 +1,164 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Dimitris Tsikopoulos is a Front End Web Developer that specializes in html, css and javascript."
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dimitris Tsikopoulos | Web Developer</title>
+  </head>
+  <body>
+    <header> 
+      <nav>
+        <div id="logo">
+          <h2>Dimitris Tsikopoulos</h2>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <div id="about" class="about">
+      <div class="about-title">
+        <h1>Hello, I am Dimitris</h1>
+        <h3>a Web Developer</h3>
+        <p>I create <span id="typing" class="typing"></span></p>
+      </div>
+    </div>
+    <div id="projects" class="projects">
+      <div class="upper-title">
+        <h1>Want to see my work?</h1>
+        <div class="myBtnContainer" id="myBtnContainer">
+          <button class="btn active">Show all</button>
+          <button class="btn">HTML/CSS</button>
+          <button class="btn">JavaScript</button>
+        </div>
+      </div>
+      <div class="project-tile">
+        <div class="tile">
+          <div class="content">
+            <img src="/projects/Travelling Agency.png" alt="" />
+            <h4>Travelling Agency</h4>
+            <p>
+              A travel site where you can pick the perfect hotel flight and
+              destination.
+            </p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="content">
+            <img src="/projects/Elena Joy - Photography.png" alt="" />
+            <h4>Elena Joy - Photography</h4>
+            <p>A professional webpage of a photographer.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="content">
+            <img src="projects/Portfolio Site.png" alt="" />
+            <h4>Portfolio Site</h4>
+            <p>A developer portfolio site</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="content">
+            <img src="projects/Todo list.png" alt="" />
+            <h4>Todo List</h4>
+            <p>A Todo List where you can create and delete daily tasks.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="content">
+            <img src="/projects/Bitmaker.png" alt="Bitmaker Project" />
+            <h4>Bitmaker App</h4>
+            <p>An app which generates custom bit sounds.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="content">
+            <img src="/projects/coloors.png" alt="Coloors Project" />
+            <h4>Coloors App</h4>
+            <p>A color pallet generator.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="content">
+            <img src="/projects/Photon.png" alt="Photon Project" />
+            <h4>Photon Webpage</h4>
+            <p>A photo gallery webpage based on the Pexels API.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact">
+      <div class="form-left">
+        <h1>Did you like my work?</h1>
+        <h3>Contact me!</h3>
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your Name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your Email" />
+          <label for="text">Message:</label>
+          <textarea
+            name=""
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+          <button class="form-btn">Submit</button>
+        </form>
+      </div>
+
+      <div class="form-right">
+        <div class="social-title">
+          <h1>My social media</h1>
+        </div>
+        <div class="social-icons">
+          <a href="https://twitter.com/DTsikopoulos"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://github.com/dimitristsikopoulos"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dimitrios-tsikopoulos-14058b42?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuvD9xxiLQ5WlhrUQhchkAQ%3D%3D"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <footer><h4>Dimitrios Tsikopoulos 2020 &copy;</h4></footer>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
