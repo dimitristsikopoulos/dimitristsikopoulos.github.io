@@ -10,8 +10,7 @@ html {
 }
 /* nav bar */
 nav {
-  width: 90vw;
-
+  width: 100vw;
   min-height: 10vh;
   background: #485f9d;
   display: flex;
@@ -19,9 +18,6 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 5%;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
   box-shadow: -2px 2px 10px rgb(156, 156, 156);
 }
 #logo {
@@ -75,72 +71,22 @@ ul li :hover {
     height: 90vh;
     top: 10vh;
     background: #485f9d;
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
     margin: auto;
-    transform: translateX(10vw);
+    border: solid white 1px;
+    transform: translateX(0vw);
     transition: transform 0.5s ease-in-out;
-  }
-  .nav-links li {
-    opacity: 0;
   }
   .burger {
     display: block;
   }
-  .upper-title {
-    flex-direction: column;
-    max-width: 90vw;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .upper-title h1 {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    margin: auto;
-  }
-  .contact {
-    flex-direction: column;
-
-    align-items: center;
-  }
-  .form-right,
-  .form-left {
-    min-width: 90vw;
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .form-right {
-    height: 40vh;
-  }
-  .form-left input {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    margin: auto;
-  }
-  .nav-active {
-    transform: translateX(-102.5vw);
-  }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -5px);
-  }
+}
+.nav-active {
+  transform: translateX(-100vw);
+  overflow: hidden;
 }
 @keyframes navLinkFade {
   from {
@@ -151,6 +97,16 @@ ul li :hover {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 
 /* About section */
@@ -214,7 +170,7 @@ ul li :hover {
   min-height: 15vh;
   margin-top: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -222,16 +178,14 @@ ul li :hover {
 }
 .upper-title h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
 }
-/* .btn {
+.btn {
   padding: 1rem;
   border: none;
   background: #485f9d;
-
   color: rgb(233, 233, 233);
   font-family: "Montserrat", sans-serif;
-} */
+}
 .project-tile {
   width: 90vw;
   margin: auto;
