@@ -73,3 +73,28 @@ function typping() {
 }
 
 typping();
+
+
+// Slide menu
+const arrow=document.querySelector(".arrow-slide");
+const toggleBtn=document.querySelector(".toggle-btn")
+
+arrow.addEventListener("click",()=>{
+  toggleBtn.classList.toggle("clicked");
+  arrow.classList.toggle("clicked");
+});
+
+
+// Dark theme
+
+
+const checkbox=document.querySelector(".checkbox");
+const git=document.querySelector(".git");
+const logoH2=document.querySelector(".logoH2")
+
+
+checkbox.addEventListener("change",()=>{
+  document.body.classList.toggle("dark");
+  git.classList.toggle('dark');
+  logoH2.classList.toggle("dark")
+});
