@@ -330,7 +330,7 @@ body.dark {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.content img {
+.content a img {
   width: 100%;
   height: 100%;
   justify-self: start;
