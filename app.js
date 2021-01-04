@@ -91,13 +91,15 @@ arrow.addEventListener("click",()=>{
 
 const checkbox=document.querySelector(".checkbox");
 const git=document.querySelector(".git");
-const logoH2=document.querySelector(".logoH2")
+const logoH2=document.querySelector(".logoH2");
+const codepen=document.querySelector(".fa-codepen");
 
 
 checkbox.addEventListener("change",()=>{
   document.body.classList.toggle("dark");
   git.classList.toggle('dark');
-  logoH2.classList.toggle("dark")
+  logoH2.classList.toggle("dark");
+  codepen.classList.toggle("dark");
 });
 
 

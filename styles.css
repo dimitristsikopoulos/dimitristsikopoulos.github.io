@@ -210,7 +210,8 @@ body.dark {
   color: white;
   transition: background 0.2s linear;
 }
-.git.dark {
+.git.dark,
+.fa-codepen.dark {
   color: white;
 }
 .logoH2.dark {
