@@ -468,6 +468,9 @@ body.dark {
 .fa-linkedin {
   color: #2867b2;
 }
+.fa-codepen {
+  color: black;
+}
 footer {
   height: 10vh;
   display: flex;

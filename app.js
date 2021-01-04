@@ -2,6 +2,7 @@ const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links li");
 
+
 burger.addEventListener("click",function(){
    nav.classList.toggle("nav-active");
   burger.classList.toggle("toggle");
@@ -98,3 +99,7 @@ checkbox.addEventListener("change",()=>{
   git.classList.toggle('dark');
   logoH2.classList.toggle("dark")
 });
+
+
+//Copyright update
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
