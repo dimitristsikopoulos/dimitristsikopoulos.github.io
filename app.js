@@ -102,4 +102,10 @@ checkbox.addEventListener("change",()=>{
 
 
 //Copyright update
-document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+const date=document.querySelector('#copyright-year');
+
+function dateUpdate(){
+  date.innerText = new Date().getFullYear();
+};
+
+dateUpdate();
